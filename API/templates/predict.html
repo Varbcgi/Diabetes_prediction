@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Prediction Result</title>
+  </head>
+  <body>
+    <h1>Prediction Result</h1>
+    <p>{{ prediction }}</p>
+    {% if prediction[0] == 0.0 %}
+      <p>Lesser probability of being a diabetic, do keep your regular consultations with the doctor as Diabetes may also originate from a genetic component</p>
+    {% elif prediction[0]== 1.0 %}
+      <p>Risk of diabetes is high please visit your doctor at the earliest</p>
+    {% endif %}
+  </body>
+</html>

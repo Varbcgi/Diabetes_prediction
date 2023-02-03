@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Diabetes Prediction Form</title>
+  </head>
+  <body>
+    <h1>Diabetes Prediction</h1>
+    <p>Please enter the following information to get a prediction about your risk of diabetes:</p>
+    <form action="/predict" method="post">
+      <label for="HighBP">Do you have HighBP?:</label>
+      <input type="number" name="HighBP" required><br><br>
+      <label for="HighChol">Do you have High Cholestrol levels</label>
+      <input type="number" name="HighChol" required><br><br>
+      <label for="CholCheck">Do you have Cholestrol checks regularly</label>
+      <input type="number" name="CholCheck" required><br><br>
+      <label for="BMI">Input your BMI </label>
+      <input type="number" name="BMI" required><br><br>
+      <label for="Smoker">Are you a smoker</label>
+      <input type="number" name="Smoker" required><br><br>
+      <label for="Stroke">Have you ever suffered a stroke</label>
+      <input type="number" name="Stroke" required><br><br>
+      <label for="HeartDiseaseorAttack">Have you ever suffered a Heart Attack or have a heart disease</label>
+      <input type="number" name="HeartDiseaseorAttack" required><br><br>
+      <label for="PhysActivity">Are you physically active</label>
+      <input type="number" name="PhysActivity" required><br><br>
+      <label for="Fruits">Do you consume fruits regularly</label>
+      <input type="number" name="Fruits" required><br><br>
+      <label for="Veggies">Do you consume Vegetables regularly</label>
+      <input type="number" name="Veggies" required><br><br>
+      <label for="HvyAlcoholConsump">Do you consume alcohol in large amounts</label>
+      <input type="number" name="HvyAlcoholConsump" required><br><br>
+      <label for="AnyHealthcare">Do you have a healthcare plan</label>
+      <input type="number" name="AnyHealthcare" required><br><br>
+      <label for="NoDocbcCost">Do you spend money for consultaions</label>
+      <input type="number" name="NoDocbcCost" required><br><br>
+      <label for="GenHlth">How is your health in general </label>
+      <input type="number" name="GenHlth" required><br><br>
+      <label for="MentHlth">How is your mental health </label>
+      <input type="number" name="MentHlth" required><br><br>
+      <label for="PhysHlth">How is your physical health</label>
+      <input type="number" name="PhysHlth" required><br><br>
+      <label for="DiffWalk">Do you have difficulty in walking</label>
+      <input type="number" name="DiffWalk" required><br><br>
+      <label for="Sex">Gender</label>
+      <input type="number" name="Sex" required><br><br>
+      <label for="Age">Age as per range: 1 Age 18 to 24 , 2 Age 25 to 29 , 3 Age 30 to 34 , 4 Age 35 to 39 , 5 Age 40 to 44 , 6 Age 45 to 49 , 7 Age 50 to 54 , 8 Age 55 to 59 , 9 Age 60 to 64 , 10 Age 65 to 69 , 11 Age 70 to 74 , 12 Age 75 to 79 , 13 Age 80 or older</label>
+      <input type="number" name="Age" required><br><br>
+      <label for="Education">Educated 1 No schooling, 2 Highschool, 3 Degree, 4 Masters Degree, 5 Phd, 6 Post Doc</label>
+      <input type="number" name="Education" required><br><br>
+      <label for="Income">Range of 1 to 6 According to tax Brackets</label>
+      <input type="number" name="Income" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
