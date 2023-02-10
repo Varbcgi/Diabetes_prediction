@@ -6,9 +6,11 @@ import requests
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def home():
     return render_template("home.html")
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -34,7 +36,7 @@ def predict():
         "Age": request.form["Age"],
         "Education": request.form["Education"],
         "Income": request.form["Income"]
-        
+
     }
 
     response = requests.post("http://localhost:8000/predict", json=data)
@@ -45,6 +47,6 @@ def predict():
     else:
         return "Failed to get prediction."
 
+
 if __name__ == "__main__":
     app.run(debug=True)
-    
